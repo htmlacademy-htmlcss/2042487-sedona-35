@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Анатолий Круглов](https://up.htmlacademy.ru/htmlcss/35/user/2042487).
-* Наставник: `Неизвестно`.
+- Студент: [Анатолий Круглов](https://up.htmlacademy.ru/htmlcss/35/user/2042487).
+- Наставник: [Валентина Видяева](https://htmlacademy.ru/profile/id189794)
 
 ---
 
