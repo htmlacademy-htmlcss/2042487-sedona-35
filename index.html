@@ -42,7 +42,7 @@
       <div class="main-logo-container">
         <img class="main-logo" src="#" alt="Логотип-приветствие" />
       </div>
-      <div class="section">
+      <section class="section">
         <h1 class="section-title main-section-title">
           Седона - небольшой городок в Аризоне,<br />
           заслуживающий большего!
@@ -50,13 +50,9 @@
         <p class="advantages-description">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </p>
-      </div>
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item main-item">
             <h3 class="advantage-title">Настоящий городок</h3>
-            <span class="advantage-rectangle"> </span>
             <p class="advantage-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
@@ -64,55 +60,49 @@
           </li>
           <li class="advantages-item main-item">
             <h3 class="advantage-title">Небольшая площадь</h3>
-            <span class="advantage-rectangle"> </span>
             <p class="advantage-description">
               Все достопримечательности находятся очень близко
             </p>
           </li>
           <li class="advantages-item main-item">
             <h3 class="advantage-title">Красивая дорога</h3>
-            <span class="advantage-rectangle"> </span>
             <p class="advantage-description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
           <li class="advantages-item main-item">
             <h3 class="advantage-title">Мало туристов</h3>
-            <span class="advantage-rectangle"> </span>
             <p class="advantage-description">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
           <li class="advantages-item main-item">
-            <img class="advantage-photo" src="#" alt="Мост дьявола" />
             <h3 class="advantage-title">Там есть мост дьявола</h3>
-            <span class="advantage-rectangle"> </span>
             <p class="advantage-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
+            <img class="advantage-photo" src="#" alt="Мост дьявола" />
           </li>
-          <li class="advantages-item">
-            <ul class="advantages-sublist">
-              <li class="sublist-item">
-                <h4 class="sublist-title">Жильё</h4>
-                <p class="sublists-description">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                </p>
-              </li>
-              <li class="sublist-item">
-                <h4 class="sublist-title">Еда</h4>
-                <p class="sublist-description">
-                  Всегда заказывайте топовый фирменный бургер, вы не
-                  разочаруетесь!
-                </p>
-              </li>
-              <li class="sublist-item">
-                <h4 class="sublist-title">Сувениры</h4>
-                <p class="sublist-description">
-                  Не только китайского, но и настоящего местного производства!
-                </p>
-              </li>
-            </ul>
+        </ul>
+        <h2 class="visually-hidden">Рекомендации</h2>
+        <ul class="advantages-sublist">
+          <li class="sublist-item">
+            <h3 class="advantage-title sublist-title">Жильё</h3>
+            <p class="sublists-description">
+              Рекомендуем пожить в настоящем мотеле, всё как в кино!
+            </p>
+          </li>
+          <li class="sublist-item">
+            <h3 class="advantage-title sublist-title">Еда</h3>
+            <p class="sublist-description">
+              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+            </p>
+          </li>
+          <li class="sublist-item">
+            <h3 class="advantage-title sublist-title">Сувениры</h3>
+            <p class="sublist-description">
+              Не только китайского, но и настоящего местного производства!
+            </p>
           </li>
         </ul>
       </section>
@@ -133,30 +123,48 @@
         <p class="section-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <label class="visually-hidden" for="email">Ваш e-mail: </label>
-        <input type="email" id="email" placeholder="Ваш e-mail" />
-        <button class="button button-email">Подписаться</button>
+        <form
+          class="email-subscribe"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <label class="visually-hidden" for="email">Ваш e-mail: </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Ваш e-mail"
+            name="subscribe-email"
+          />
+          <button class="button button-email" type="submit">Подписаться</button>
+        </form>
       </section>
       <ul class="social-list">
         <li class="social-item">
           <span class="visually-hidden"> Мы вконтакте </span>
-          <a class="social-link" href="https://vk.com/htmlacademy"></a>
+          <a
+            class="social-link"
+            href="https://vk.com/htmlacademy"
+            target="_blank"
+          ></a>
         </li>
         <li class="social-item">
           <span class="visually-hidden"> Мы в телеграмм </span>
-          <a class="social-link" href="https://t.me/htmlacademy"></a>
+          <a
+            class="social-link"
+            href="https://t.me/htmlacademy"
+            target="_blank"
+          ></a>
         </li>
         <li class="social-item">
           <span class="visually-hidden"> Мы в ютубе </span>
           <a
             class="social-link"
             href="https://www.youtube.com/user/htmlacademyru"
+            target="_blank"
           ></a>
         </li>
       </ul>
-      <address class="phone">
-        <a class="phone-link" href="tel:+78128121212"> +7 (812) 812-12-12</a>
-      </address>
+      <a class="phone-link" href="tel:+78128121212"> +7 (812) 812-12-12</a>
       <a
         class="htmlacademy-link"
         href="https://htmlacademy.ru/"
