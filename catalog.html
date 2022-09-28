@@ -54,12 +54,7 @@
             Бассейн
           </label>
           <label class="option">
-            <input
-              class="option-item"
-              type="checkbox"
-              name="parking"
-              checked
-            />
+            <input class="option-item" type="checkbox" name="parking" checked />
             Парковка
           </label>
           <label class="option">
@@ -98,43 +93,42 @@
             Апартаменты
           </label>
         </fieldset>
+        <fieldset class="catalog-filter-group filter-price">
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <div class="price-selector-group">
+            <div class="price-selector-wrap">
+              <label class="price-selector-label">
+                <span class="price-selector-placeholder"> от </span>
+                <input
+                  class="price-selector price-minimal"
+                  type="text"
+                  name="minimal-price"
+                  value="0"
+                />
+              </label>
+            </div>
+            <div class="price-selector-wrap">
+              <label class="price-selector-label">
+                <span class="price-selector-placeholder"> до </span>
+                <input
+                  class="price-selector price-maximal"
+                  type="text"
+                  name="maximal-price"
+                  value="9000"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="range">
+            <button class="range range-min" type="button"></button>
+            <button class="range range-max" type="button"></button>
+          </div>
+        </fieldset>
+        <div class="catalog-filter-buttons">
+          <button class="button filter-button" type="submit">Применить</button>
+          <button class="button reset-button" type="reset">Сбросить</button>
+        </div>
       </form>
-      <fieldset class="catalog-filter-group filter-price">
-        <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-        <div class="price-selector-group">
-          <div class="price-selector-wrap">
-            <label class="price-selector-label">
-              <span class="price-selector-placeholder"> от </span>
-              <input
-                class="price-selector price-minimal"
-                type="text"
-                name="minimal-price"
-                value="0"
-              />
-            </label>
-          </div>
-          <div class="price-selector-wrap">
-            <label class="price-selector-label">
-              <span class="price-selector-placeholder"> до </span>
-              <input
-                class="price-selector price-maximal"
-                type="text"
-                name="maximal-price"
-                value="9000"
-              />
-            </label>
-          </div>
-        </div>
-        <div class="range">
-          <button class="range range-min" type="button"></button>
-          <button class="range range-max" type="button"></button>
-        </div>
-      </fieldset>
-      <div class="catalog-filter-buttons">
-        <button class="button filter-button" type="submit">Применить</button>
-        <button class="button reset-button" type="reset">Сбросить</button>
-      </div>
-    </form>
       <section class="product-list">
         <h2 class="visually-hidden">Список гостиниц</h2>
         <div class="product-navigation-top">
@@ -162,12 +156,12 @@
         <ol class="product-card-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Amara Resort & Spa</h3>
               <img
                 class="product-card-image"
                 src="#"
                 alt="Amara Resort & Spa"
               />
-              <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
             <div class="product-card-property">
               <span class="product-card-type"> Гостиница </span>
@@ -184,12 +178,12 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Villas at Poco Diablo</h3>
               <img
                 class="product-card-image"
                 src="#"
                 alt="Villas at Poco Diablo"
               />
-              <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <div class="product-card-property">
               <span class="product-card-type"> Гостиница </span>
@@ -206,8 +200,8 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="#" alt="Desert Quail Inn" />
               <h3 class="product-card-title">Desert Quail Inn</h3>
+              <img class="product-card-image" src="#" alt="Desert Quail Inn" />
             </a>
             <div class="product-card-property">
               <span class="product-card-type"> Гостиница </span>
@@ -224,8 +218,8 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="#" alt="GreenTree Inn" />
               <h3 class="product-card-title">GreenTree Inn</h3>
+              <img class="product-card-image" src="#" alt="GreenTree Inn" />
             </a>
             <div class="product-card-property">
               <span class="product-card-type"> Гостиница </span>
