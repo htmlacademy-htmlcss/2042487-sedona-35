@@ -33,6 +33,10 @@ body {
   overflow: hidden;
 }
 
+.nav-list {
+  list-style-type: none;
+}
+
 .nav-link {
 font-family: inherit;
  font-size: 20px;
@@ -166,4 +170,112 @@ font-family: inherit;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.social-list {
+  list-style-type: none;
+}
+
+.main-filter-header {
+  background-image:url(../images/catalog/filter-background.jpg);
+  color: #FFFFFF;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs-link{
+  color: #FFFFFF;
+}
+
+.product-list-title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.catalog-filter-title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.option-item {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.reset-button {
+  background-color: transparent;
+}
+.button-secondary {
+  background-color: #82B3D3;
+}
+
+.button-secondary-active {
+  background: #7DB54F;
+}
+
+.select-control {
+  width: 292px;
+  height: 49px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  background-image: url(../images/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+}
+
+.product-card-list {
+  list-style-type: none;
+}
+
+.product-card-title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.product-card-rating {
+  margin: 0;
+  min-width: 140px;
+  padding: 8px 22px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  width: 140px;
+  min-height: 37px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #82B3D3;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
 }
