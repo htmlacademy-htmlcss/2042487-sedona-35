@@ -22,7 +22,148 @@ body {
   background-color: #FFFFFF;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .nav-link {
- font-size: 30px;
- line-height: 36px;
+font-family: inherit;
+ font-size: 20px;
+ line-height: 24px;
+ font-weight: 700;
+ color: #000000;
+ text-align: center;
+ text-decoration: none;
+}
+
+.button-search {
+  background-image: url(../images/icons/search.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 44px;
+  height: 64px;
+}
+
+.button-likes {
+  margin: 0;
+  background-image: url(../images/icons/heart.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 44px;
+  height: 64px;
+  border: 0;
+}
+
+.favorites-counter {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 10px;
+  background-color: #7DB54F;
+  }
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 0;
+  padding: 8px 34px 8px;
+}
+
+.main-logo-container {
+  background-image: url(../images/welcome-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+}
+
+.main-section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px ;
+}
+
+.advantages-description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px
+}
+
+.advantage-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px
+}
+
+.advantage-description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px
+}
+.card-home {
+  background-image: url(../images/advantages-house.svg);
+  background-repeat: no-repeat;
+}
+
+.card-food {
+  background-image: url(../images/advantages-burger.svg);
+  background-repeat: no-repeat;
+}
+.card-gift {
+  background-image: url(../images/advantages-gift.svg);
+  background-repeat: no-repeat;
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.section-subscribe {
+  background-image: url(../images/subscribe-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center
+}
+.email-button {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+.phone-link {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
