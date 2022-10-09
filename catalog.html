@@ -4,19 +4,20 @@
     <head>
       <meta charset="utf-8" >
       <title>Гостиницы Седоны</title>
+      <link rel="stylesheet" href="styles/styles.css">
       <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
       <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     </head>
-    <body>
 
+    <body>
       <header class="page-header">
         <a class="nav-logo" href="index.html">
-          <img class="logo" src="images/sedona-logo.svg"  width="140" height="70" alt="Логотип Седоны."
-        ></a>
+          <img class="logo" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип Седоны.">
+        </a>
         <nav class="nav">
-          <ul class="nav-list">
+          <ul class="nav-list reset-list">
             <li class="nav-item">
-              <a class="nav-link-current" href="index.html">Главная</a>
+              <a class="nav-link nav-link-current" href="index.html">Главная</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">О Седоне</a>
@@ -26,32 +27,37 @@
             </li>
           </ul>
         </nav>
-        <ul class="nav-list">
+        <ul class="nav-list reset-list">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="button-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="button-likes" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="favorites-counter">
+                12
+              </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="button" href="#">Хочу сюда</a>
+            <a class="button button-here" href="#">Хочу сюда</a>
           </li>
         </ul>
       </header>
-
       <main>
+       <div class="main-filter-header">
         <div class="catalog-header">
           <h1 class="catalog-header-title">Гостиницы Седоны</h1>
         </div>
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs reset-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная</span>
+              <svg width="13" height="12" fill="current-Color" xmlns="http://www.w3.org/2000/svg"><path d="m6.4 0-6 5.8V12h12V5.8L6.4 0Zm5 11h-10V6.2l5-4.8 5 4.8V11Z" fill="#FFF"/><path d="M4.4 10h1V7.5h2V10h1V6.5h-4V10Z" fill="#FFF"/></svg>
             </a>
+            <svg width="7" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.11 4.47 1.36.22C1.11-.03.61-.03.24.22c-.38.25-.25.75 0 1l4.12 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.38.25.5.25.13 0 .38-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z" fill="#FFF"/></svg>
           </li>
           <li>
             <a class="breadcrumbs-link" href="#">Гостинницы</a>
@@ -137,8 +143,9 @@
             </div>
           </fieldset>
           <div class="catalog-filter-buttons">
-            <button class="button filter-button" type="submit">Применить</button>
+            <button class="button filter-button button-secondary" type="submit">Применить</button>
             <button class="button reset-button" type="reset">Сбросить</button>
+          </div>
           </div>
         </form>
 
@@ -165,7 +172,7 @@
             </div>
           </div>
 
-          <ol class="product-card-list">
+          <ol class="product-card-list reset-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -177,10 +184,10 @@
               <div class="product-card-property">
                 <span class="product-card-type">Гостиница</span>
                 <b class="product-card-price">От 4000 ₽</b>
-                <a class="button-primary button-product-card" href="#">
+                <a class="button button-primary button-product-card" href="#">
                   Подробнее
                 </a>
-                <button class="button-secondary button-product-card" type="button">
+                <button class="button button-secondary button-product-card" type="button">
                   В избранное
                 </button>
                 <div class="rating-list rating-four-stars"></div>
@@ -198,9 +205,9 @@
               <div class="product-card-property">
                 <span class="product-card-type">Гостиница</span>
                 <b class="product-card-price">От 5000 ₽</b>
-                <a class="button-primary button-product-card">Подробнее</a>
+                <a class="button button-primary button-product-card">Подробнее</a>
                 <button
-                  class="button-secondary-active button-product-card"
+                  class="button button-secondary-active button-product-card"
                   type="button">В избранном</button>
                 <div class="rating-list rating-four-stars"></div>
                 <span class="product-card-rating">Рейтинг: 9,2</span>
@@ -215,11 +222,11 @@
               <div class="product-card-property">
                 <span class="product-card-type"> Гостиница </span>
                 <b class="product-card-price"> От 2500 ₽ </b>
-                <a class="button-primary button-product-card" href="#">
+                <a class="button button-primary button-product-card" href="#">
                   Подробнее
                 </a>
                 <button
-                  class="button-secondary button-product-card"
+                  class="button button-secondary button-product-card"
                   type="button">
                   В избранное
                 </button>
@@ -236,11 +243,11 @@
               <div class="product-card-property">
                 <span class="product-card-type">Гостиница</span>
                 <b class="product-card-price"> От 1500 ₽ </b>
-                <a class="button-primary button-product-card" href="#">
+                <a class="button button-primary button-product-card" href="#">
                   Подробнее
                 </a>
                 <button
-                  class="button-secondary button-product-card"
+                  class="button button-secondary button-product-card"
                   type="button">
                   В избранное
                 </button>
@@ -250,7 +257,7 @@
             </li>
           </ol>
           <div class="catalog-pagination">
-            <ul class="pagination">
+            <ul class="pagination reset-list">
               <li class="pagination-item">
                 <a class="pagination-link current-page" href="#"> 1 </a>
               </li>
@@ -278,13 +285,13 @@
         <section class="section subscribe">
           <h2 class="section-title">Подпишитесь на рассылку</h2>
           <p class="section-description">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама, <br> честное бойскаутское!
           </p>
           <label class="visually-hidden" for="email">Ваш e-mail:</label>
-          <input type="email" id="email" placeholder="Ваш e-mail" required>
-          <button class="button button-email" type="submit">Подписаться</button>
+          <input class="inputfield newsletter-input" type="email" id="email" placeholder="Ваш e-mail" required>
+          <button class="button email-button" type="submit">Подписаться</button>
         </section>
-        <ul class="social-list">
+        <ul class="social-list reset-list">
           <li class="social-item">
             <span class="visually-hidden">Мы вконтакте</span>
             <a
