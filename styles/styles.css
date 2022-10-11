@@ -21,15 +21,6 @@
           box-sizing: border-box;
 }
 
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  color: #000000;
-  background-color: #FFFFFF;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -41,6 +32,48 @@ body {
   overflow: hidden;
 }
 
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+  width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  min-height: 64px;
+}
+
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: stretch;
+  width: 507px;
+}
+
+.nav-list-secondary {
+  width: 268px;
+}
+
+.nav-list-secondary .nav-item {
+  align-self: center;
+}
+
 .nav-link {
  font-family: inherit;
  font-size: 20px;
@@ -49,11 +82,14 @@ body {
  color: #000000;
  text-align: center;
  text-decoration: none;
+ display: flex;
+ padding: 20px 16px;
 }
 
 .button-search {
   background-image: url(../images/icons/search.svg);
   background-repeat: no-repeat;
+  background-position: center center;
   display: block;
   width: 44px;
   height: 64px;
@@ -63,10 +99,12 @@ body {
   margin: 0;
   background-image: url(../images/icons/heart.svg);
   background-repeat: no-repeat;
+  background-position: center center;
   display: block;
   width: 44px;
   height: 64px;
   border: 0;
+
 }
 
 .favorites-counter {
@@ -82,9 +120,9 @@ body {
   letter-spacing: -0.1em;
   background: #7DB54F;
   color: #FFFFFF;
-  position: absolute;
-  left: 58px;
-
+  position: relative;
+  left: 18px;
+  top: 5px;
   }
 
 .button {
@@ -108,9 +146,24 @@ body {
   background-size: 100% auto;
   text-align: center;
   background-color: #80b2cd;
-  min-height: 485px;
-  position: relative;
+  padding: 51px 0 82px 0;
+
+}
+
+.main-logo {
   display: block;
+  margin: 0 auto;
+}
+
+.main-logo-container::after {
+  content: "";
+  background-image: url(../images/welcome-divider.svg);
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 57px;
+
 }
 
 .main-section-title {
@@ -163,18 +216,27 @@ body {
   background-image: url(../images/advantages-house.svg);
   background-repeat: no-repeat;
   background-color: rgba(131, 179, 211, 0.12);
+  background-position: left 50% top 80px;
 }
 
 .card-food {
   background-image: url(../images/advantages-burger.svg);
   background-repeat: no-repeat;
   background-color: #FFFFFF;
+  background-position: left 50% top 80px;
 
 }
 .card-gift {
   background-image: url(../images/advantages-gift.svg);
   background-repeat: no-repeat;
   background-color: rgba(131, 179,211, 0.12);
+  background-position: left 50% top 80px;
+}
+
+.advantages-sublist {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .button-big {
@@ -184,6 +246,10 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+}
+
+.section-search {
+  text-align: center;
 }
 
 .section-description {
@@ -228,6 +294,23 @@ body {
   border-radius: 0px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  text-align: center;
+}
+
+.footer {
+  min-height: 50px;
+  margin: 0;
+  padding: 40px 70px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 142px;
+  justify-content: space-between;
 }
 
 .phone-link {
