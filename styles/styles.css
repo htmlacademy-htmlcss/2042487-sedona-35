@@ -21,6 +21,12 @@
           box-sizing: border-box;
 }
 
+.reset-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -30,6 +36,12 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+html {
+  background-color: #F2F2F2;
+  min-width: 1280px;
+  height: 100%;
 }
 
 body {
@@ -45,6 +57,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
@@ -57,6 +70,9 @@ body {
   min-height: 64px;
 }
 
+.logo {
+  position: absolute;
+}
 
 .nav-list {
   display: flex;
@@ -84,7 +100,17 @@ body {
  text-decoration: none;
  display: flex;
  padding: 20px 16px;
+ position: relative;
 }
+
+.nav-link-current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    right: 16px;
+    border-bottom: 2px solid #756257;
+  }
 
 .button-search {
   background-image: url(../images/icons/search.svg);
@@ -140,12 +166,17 @@ body {
   padding: 8px 34px 8px;
 }
 
+.main-index {
+  flex-grow: 1;
+}
+
 .main-logo-container {
   background-image: url(../images/welcome-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   text-align: center;
   background-color: #80b2cd;
+  height: 485px;
   padding: 51px 0 82px 0;
 
 }
@@ -153,17 +184,17 @@ body {
 .main-logo {
   display: block;
   margin: 0 auto;
+
 }
 
 .main-logo-container::after {
   content: "";
   background-image: url(../images/welcome-divider.svg);
   display: block;
-  position: relative;
-  background-repeat: no-repeat;
+  position: absolute;  background-repeat: no-repeat;
   width: 100%;
   height: 57px;
-
+  margin-top: 25px;
 }
 
 .main-section-title {
@@ -237,6 +268,21 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+}
+
+.sublist-item {
+  width: 400px;
+  height: 384px;
+  padding: 80px 85px 81px;
+}
+
+.sublist-title {
+  padding-top: 102px;
+}
+
+.sublist-description {
+  padding-top:30px;
+  text-align: center;
 }
 
 .button-big {
@@ -330,10 +376,8 @@ body {
   background-color: #756158;
 }
 
-.reset-list{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.main-catalog {
+  flex-grow: 1;
 }
 
 .breadcrumbs-link{
