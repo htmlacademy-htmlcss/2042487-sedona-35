@@ -117,7 +117,7 @@ body {
     left: 16px;
     right: 16px;
     border-bottom: 2px solid #756257;
-  }
+}
 
 .button-search {
   background-image: url(../images/icons/search.svg);
@@ -203,7 +203,6 @@ body {
   bottom: 0;
 }
 
-
 .main-section-title {
   text-align: center;
   font-weight: 700;
@@ -261,7 +260,6 @@ body {
   justify-content: center;
 }
 
-
 .advantage-title {
   font-weight: 700;
   text-align: center;
@@ -304,6 +302,10 @@ body {
   ;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+
 .card-home {
   background-image: url(../images/advantages-house.svg);
   background-repeat: no-repeat;
@@ -333,7 +335,7 @@ body {
 
 .sublist-item {
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   padding: 80px 85px 81px;
 }
 
@@ -380,6 +382,10 @@ body {
   color: #000000;
   text-align: center;
   padding: 96px 258px 104px;
+}
+
+.email-subscribe {
+display: flex;
 }
 
 .input-field {
@@ -603,6 +609,10 @@ background-color: #756157;
   background-position: center;
 }
 
+.catalog-variant-button-current {
+  border-color: #000000;
+}
+
 .catalog-view-title {
   background-image: url(../images/icons/view-tile.svg);
 }
@@ -635,7 +645,7 @@ background-color: #756157;
 .product-card-list {
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
-  gap: 20px;
+  gap: 16px;
 }
 
 .product-card-title {
@@ -708,10 +718,14 @@ background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
   background: #82B3D3;
-  border: 1px solid #82B3D3;
   border-radius: 4px;
   color: #FFFFFF;
   align-items: center;
   justify-content: center;
   display:flex ;
+}
+
+.pagination-dots {
+  color: #000000;
+  background-color: #FFFFFF;
 }
