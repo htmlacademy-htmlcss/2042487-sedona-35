@@ -82,18 +82,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  align-items: stretch;
   margin-left: 170px;
 }
 
 .nav-list-secondary {
-  display: flex;
-  justify-content: space-between;
-  width: 268px;
+  margin-left: 20px;
 }
 
 .nav-list-secondary .nav-item {
   align-self: center;
+}
+
+.button-here {
+  margin-left: 20px;
 }
 
 .nav-link {
@@ -229,17 +230,13 @@ body {
 
 .advantages-list {
   display: flex;
-  margin: 0;
-  padding: 0;
   flex-wrap: wrap;
   align-content: flex-start;
   }
 
 .advantages-item {
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: center;
+  flex-direction: column;
   width: 400px;
   height: 384px;
   padding: 103px 85px 121px;
@@ -258,7 +255,10 @@ body {
   color:#FFFFFF;
   width: 100%;
   padding: 0;
-
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
 }
 
 
@@ -268,15 +268,15 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .advantages-item .advantage-title::after {
   content: "";
   position: relative;
   display: block;
-  bottom: -20px;
-  left: 20px;
-  right: 20px;
+  margin: 30px auto 30px;
+  width: 60px;
   border-bottom: 2px solid  rgba(0, 0, 0, 0.3);
 }
 
@@ -284,6 +284,7 @@ body {
   text-align: center;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .section-title {
@@ -294,11 +295,11 @@ body {
   line-height: 36px
 }
 
-.second-card {
+.light-blue-card {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.third-card {
+.blue-card {
   background-color: rgba(131, 179, 211, 0.2);
   ;
 }
