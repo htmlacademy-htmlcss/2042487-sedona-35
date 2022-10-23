@@ -2,7 +2,7 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" >
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
@@ -10,13 +10,13 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="nav-logo">
         <img class="logo" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип Седоны.">
       </a>
       <nav class="nav">
         <ul class="nav-list reset-list">
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link nav-link-current" href="index.html">Главная</a>
           </li>
           <li class="nav-item">
@@ -27,7 +27,12 @@
           </li>
         </ul>
       </nav>
-      <ul class="nav-list reset-list">
+      <ul class="nav-list reset-list nav-list-secondary">
+        <li class="nav-item">
+          <a class="button-search" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
         <li class="nav-item">
           <a class="button-search" href="#">
             <span class="visually-hidden">Поиск</span>
@@ -50,140 +55,133 @@
     <main class="main-index">
       <h1 class="visually-hidden">Седона</h1>
       <div class="main-logo-container">
-        <img class="main-logo" src="images/welcome-words.svg" width="458" height="352" alt="Логотип-приветствие." >
+        <img class="main-logo" src="images/welcome-words.svg" width="458" height="352" alt="Логотип-приветствие.">
       </div>
-      <section class="section">
-        <h2 class="section-title main-section-title">
-          Седона - небольшой городок в Аризоне,<br>
-          заслуживающий большего!
-        </h2>
-        <p class="advantages-description">
-          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-        </p>
-        <ul class="advantages-list reset-list">
-          <li class="advantages-item main-item">
+      <div class="advantages-container">
+        <section class="section">
+          <h2 class="section-title main-section-title">
+            Седона - небольшой городок в Аризоне,<br>
+            заслуживающий большего!
+          </h2>
+          <p class="advantages-description">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+      </div>
+      <ul class="advantages-list reset-list">
+        <li class="advantages-item main-item">
+          <div class="advantages-item-wrapper">
             <h3 class="advantage-title">Настоящий городок</h3>
             <p class="advantage-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-            <img class="advantage-photo" src="images/photo-city.jpg" width="800" height="384" alt="Город в зелени." >
-          </li>
-          <li class="advantages-item main-item">
-            <h3 class="advantage-title">Небольшая площадь</h3>
-            <p class="advantage-description">
-              Все достопримечательности находятся очень близко
-            </p>
-          </li>
-          <li class="advantages-item main-item">
-            <h3 class="advantage-title">Красивая дорога</h3>
-            <p class="advantage-description">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
-          </li>
-          <li class="advantages-item main-item">
-            <h3 class="advantage-title">Мало туристов</h3>
-            <p class="advantage-description">
-              Большинство едет в Гранд Каньон и толпится там
-            </p>
-          </li>
-          <li class="advantages-item main-item">
+          </div>
+          <img class="advantage-photo" src="images/photo-city.jpg" width="800" height="384" alt="Город в зелени.">
+        </li>
+        <li class="advantages-item light-blue-card">
+          <h3 class="advantage-title">Небольшая площадь</h3>
+          <p class="advantage-description">
+            Все достопримечательности находятся очень близко
+          </p>
+        </li>
+        <li class="advantages-item blue-card">
+          <h3 class="advantage-title">Красивая <br> дорога</h3>
+          <p class="advantage-description">
+            Ехать в Седону из Лас-Вегаса совсем не скучно!
+          </p>
+        </li>
+        <li class="advantages-item light-blue-card-card">
+          <h3 class="advantage-title">Мало <br> туристов</h3>
+          <p class="advantage-description">
+            Большинство едет в Гранд Каньон и толпится там
+          </p>
+        </li>
+        <li class="advantages-item main-item reverse">
+          <div class="advantages-item-wrapper">
             <h3 class="advantage-title">Там есть <br> мост дьявола</h3>
             <p class="advantage-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-            <img class="advantage-photo" src="images/photo-brige.jpg" width="800" height="384" alt="Мост дьявола." >
-          </li>
-        </ul>
-        <h2 class="visually-hidden">Рекомендации</h2>
-        <ul class="advantages-sublist reset-list">
-          <li class="sublist-item card-home" >
-            <h3 class="advantage-title sublist-title">Жильё</h3>
-            <p class="sublists-description">
-              Рекомендуем пожить в настоящем мотеле, <br> всё как в&nbsp;кино!
-            </p>
-          </li>
-          <li class="sublist-item card-food">
-            <h3 class="advantage-title sublist-title">Еда</h3>
-            <p class="sublist-description">
-              Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь!
-            </p>
-          </li>
-          <li class="sublist-item card-gift">
-            <h3 class="advantage-title sublist-title">Сувениры</h3>
-            <p class="sublist-description">
-              Не только китайского, но и настоящего местного производства!
-            </p>
-          </li>
-        </ul>
+          </div>
+          <img class="advantage-photo" src="images/photo-brige.jpg" width="800" height="384" alt="Мост дьявола.">
+        </li>
+      </ul>
+      <h2 class="visually-hidden">Рекомендации</h2>
+      <ul class="advantages-sublist reset-list ">
+        <li class="sublist-item card-home">
+          <h3 class="advantage-title sublist-title">Жильё</h3>
+          <p class="sublist-description">
+            Рекомендуем пожить в&nbsp;настоящем мотеле, <br> всё как в&nbsp;кино!
+          </p>
+        </li>
+        <li class="sublist-item card-food">
+          <h3 class="advantage-title sublist-title">Еда</h3>
+          <p class="sublist-description">
+            Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь!
+          </p>
+        </li>
+        <li class="sublist-item card-gift">
+          <h3 class="advantage-title sublist-title">Сувениры</h3>
+          <p class="sublist-description">
+            Не только китайского, но и настоящего местного производства!
+          </p>
+        </li>
+      </ul>
       </section>
 
-      <section class="section search">
+      <section class="section-search">
         <h2 class="section-title">Заинтересовались?</h2>
         <p class="section-description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
         <button class="button button-big" type="button">
           Поиск гостиницы в Седоне
         </button>
       </section>
-    </main>
 
-    <footer class="footer">
+
       <section class="section-subscribe-main">
         <h2 class="section-title">Подпишитесь на рассылку</h2>
         <p class="section-description">
           Только полезная информация и никакого спама, <br> честное бойскаутское!
         </p>
-        <form
-          class="email-subscribe"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
+        <form class="email-subscribe" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Ваш e-mail: </label>
-          <input class="inputfield newsletter-input" type="email" id="email" placeholder="Ваш e-mail" name="subscribe-email" required>
+          <input class="input-field newsletter-input" type="email" id="email" placeholder="Ваш e-mail"
+            name="subscribe-email" required>
           <button class="button email-button" type="submit">Подписаться</button>
         </form>
       </section>
 
+    </main>
+    <footer class="footer">
       <ul class="social-list reset-list">
         <li class="social-item">
           <span class="visually-hidden"> Мы вконтакте </span>
-          <a
-            class="social-link"
-            href="https://vk.com/htmlacademy"
-            target="_blank">
+          <a class="social-link" href="https://vk.com/htmlacademy" target="_blank">
             <img src="images/icons/social-vk.svg" width="24" height="14" alt="">
           </a>
         </li>
         <li class="social-item">
           <span class="visually-hidden"> Мы в телеграмм </span>
-          <a
-            class="social-link"
-            href="https://t.me/htmlacademy"
-            target="_blank">
+          <a class="social-link" href="https://t.me/htmlacademy" target="_blank">
             <img src="images/icons/social-telegram.svg" width="18" height="15" alt="">
           </a>
         </li>
         <li class="social-item">
           <span class="visually-hidden"> Мы в ютубе </span>
-          <a
-            class="social-link"
-            href="https://www.youtube.com/user/htmlacademyru"
-            target="_blank">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
             <img src="images/icons/social-youtube.svg" width="22" height="17" alt="">
           </a>
         </li>
       </ul>
 
       <a class="phone-link" href="tel:+78128121212"> +7 (812) 812-12-12</a>
-      <a
-        class="htmlacademy-link"
-        href="https://htmlacademy.ru/"
-        title="Ссылка на htmlacademy"
-        target="_blank">
-        <img class="htmlacademy-logo" src="images/htmlacademy-logo.svg" width="115" height="33" alt="Логотип разаработчика HTML Academy.">
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/" title="Ссылка на htmlacademy" target="_blank">
+        <img class="htmlacademy-logo" src="images/htmlacademy-logo.svg" width="115" height="33"
+          alt="Логотип разаработчика HTML Academy.">
       </a>
     </footer>
   </body>
+
 </html>
