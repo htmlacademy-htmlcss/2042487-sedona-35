@@ -203,19 +203,35 @@ body {
   bottom: 0;
 }
 
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
 .main-section-title {
   text-align: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px ;
   text-transform: uppercase;
+  margin: 0 0 25px;
+  padding: 0;
+}
+
+.advantages-container {
+padding: 69px 20px 90px;
 }
 
 .advantages-description {
   text-align: center;
   font-size: 22px;
   line-height: 26px;
-  margin-bottom: 90px;
+  margin: 0;
 }
 
 .advantage-photo {
@@ -233,8 +249,8 @@ body {
   align-content: flex-start;
   }
 
-.advantages-item {
-  display: flex;
+  .advantages-item {
+    display: flex;
   flex-direction: column;
   width: 400px;
   height: 384px;
@@ -283,15 +299,9 @@ body {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
+  color: #333333;
 }
 
-.section-title {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px
-}
 
 .light-blue-card {
   background-color: rgba(131, 179, 211, 0.12);
@@ -344,8 +354,10 @@ body {
 }
 
 .sublist-description {
-  padding-top:30px;
+  padding-top: 20px;
+  margin: 0;
   text-align: center;
+  color: #333333;
 }
 
 .button-big {
@@ -366,6 +378,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
+  padding-bottom: 54px;
 }
 
 .section-subscribe-main {
@@ -471,7 +485,7 @@ display: flex;
   background-size: cover;
   background-color: #756158;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 70px;
 }
 
 .main-inner {
@@ -479,7 +493,8 @@ display: flex;
 }
 
 .breadcrumbs {
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
+  padding-bottom: 40px;
   color: inherit;
   font-size: 16px;
   line-height: 21px;
@@ -489,6 +504,7 @@ display: flex;
 
 .breadcrumbs-link{
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .product-list-title {
@@ -508,6 +524,15 @@ border: 0;
 
 .catalog-filter {
   display: flex;
+}
+
+.catalog-header-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  text-transform: none;
 }
 
 .catalog-filter-group {
@@ -582,6 +607,7 @@ background-color: #756157;
   appearance: none;
   margin-left: auto;
   margin-right: 70px;
+  padding-left: 20px;
   flex-shrink: 0;
 }
 
@@ -653,7 +679,8 @@ background-color: #756157;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 0;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .product-card-link {
