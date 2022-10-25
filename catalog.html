@@ -59,11 +59,6 @@
                 <path d="M4.4 10h1V7.5h2V10h1V6.5h-4V10Z" fill="#FFF" />
               </svg>
             </a>
-            <svg width="7" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.11 4.47 1.36.22C1.11-.03.61-.03.24.22c-.38.25-.25.75 0 1l4.12 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.38.25.5.25.13 0 .38-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z"
-                fill="#FFF" />
-            </svg>
           </li>
           <li>
             <a class="breadcrumbs-link" href="#">Гостинницы</a>
@@ -254,11 +249,12 @@
       <section class="section-subscribe">
         <h2 class="section-title">Подпишитесь на рассылку</h2>
         <p class="section-description">
-          Только полезная информация и никакого спама, <br> честное бойскаутское!
-        </p>
-        <label class="visually-hidden" for="email">Ваш e-mail:</label>
-        <input class="input-field newsletter-input" type="email" id="email" placeholder="Ваш e-mail" required>
-        <button class="button email-button" type="submit">Подписаться</button>
+        <form class="email-subscribe" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="email">Ваш e-mail: </label>
+          <input class="input-field newsletter-input" type="email" id="email" placeholder="Ваш e-mail"
+            name="subscribe-email" required>
+          <button class="button email-button" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
     <footer class="footer">
