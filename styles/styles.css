@@ -263,7 +263,7 @@ padding: 69px 20px 90px;
  flex-wrap: wrap;
  flex-direction: column;
  width: 400px;
- padding: 103px 85px 121px;
+ padding: 92px 85px 111px;
 }
 
 .main-item {
@@ -533,6 +533,9 @@ display: flex;
   margin-right: 20px;
 }
 
+.product-card-price {
+  font-weight: 400;
+}
 .catalog-filter-control {
 border: 0;
 }
