@@ -101,13 +101,13 @@
             <div class="price-selector-group">
               <div class="price-selector-wrap">
                 <label class="price-selector-label">
-                  <span class="price-selector-placeholder">от</span>
+                  <span class="price-selector-placeholder placeholder-from">от</span>
                   <input class="price-selector price-minimal" type="text" name="minimal-price" value="0">
                 </label>
               </div>
               <div class="price-selector-wrap">
                 <label class="price-selector-label">
-                  <span class="price-selector-placeholder">до</span>
+                  <span class="price-selector-placeholder placeholder-to">до</span>
                   <input class="price-selector price-maximal" type="text" name="maximal-price" value="9000">
                 </label>
               </div>
@@ -222,33 +222,33 @@
             </div>
           </li>
         </ol>
-        <div class="catalog-pagination catalog-navigation-bottom">
-          <ul class="pagination reset-list">
-            <li class="pagination-item">
-              <a class="pagination-link current-page" href="#"> 1 </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 2 </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 3 </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 4 </a>
-            </li>
-            <li class="pagination-item">
-              <span class="pagination-link pagination-dots"> ... </span>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 10 </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="pagination reset-list catalog-pagination catalog-navigation-bottom">
+          <li class="pagination-item">
+            <a class="pagination-link current-page" href="#"> 1 </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#"> 2 </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#"> 3 </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#"> 4 </a>
+          </li>
+          <li class="pagination-item">
+            <span class="pagination-link pagination-dots"> ... </span>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#"> 10 </a>
+          </li>
+        </ul>
       </section>
 
       <section class="section-subscribe">
         <h2 class="section-title">Подпишитесь на рассылку</h2>
         <p class="section-description">
+          Только полезная информация и никакого спама, <br> честное бойскаутское!
+        </p>
         <form class="email-subscribe" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Ваш e-mail: </label>
           <input class="input-field newsletter-input" type="email" id="email" placeholder="Ваш e-mail"
