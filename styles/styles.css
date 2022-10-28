@@ -653,11 +653,39 @@ top: 11px;
   top: 11px;
 }
 
-.range {
-  display: block;
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 12px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 287px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+  width:227px;
+  margin-left:0
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-toggle {
+  position: absolute;
   width: 20px;
   height: 20px;
+  background: #ffffff;
   border-radius: 5px;
+  border: 0;
+  cursor: pointer;
 }
 
 .catalog-filter-buttons {
