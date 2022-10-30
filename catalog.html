@@ -42,7 +42,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="button button-here" href="#">Хочу сюда</a>
+          <a class="button button-here" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </header>
@@ -59,14 +59,9 @@
                 <path d="M4.4 10h1V7.5h2V10h1V6.5h-4V10Z" fill="#FFF" />
               </svg>
             </a>
-            <svg width="7" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.11 4.47 1.36.22C1.11-.03.61-.03.24.22c-.38.25-.25.75 0 1l4.12 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.38.25.5.25.13 0 .38-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z"
-                fill="#FFF" />
-            </svg>
           </li>
           <li>
-            <a class="breadcrumbs-link" href="#">Гостинницы</a>
+            <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
         </ul>
 
@@ -83,11 +78,11 @@
             </label>
             <label class="option">
               <input class="option-item" type="checkbox" name="wi-fi">
-              Wi-fi
+              Wi-Fi
             </label>
           </fieldset>
           <fieldset class="catalog-filter-type catalog-filter-control">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <legend class="catalog-filter-title">Тип Жилья:</legend>
             <label class="option">
               <input class="option-item" type="radio" name="catalog-product-type" value="hotel" checked>
               Гостиница
@@ -106,21 +101,26 @@
             <div class="price-selector-group">
               <div class="price-selector-wrap">
                 <label class="price-selector-label">
-                  <span class="price-selector-placeholder">от</span>
+                  <span class="price-selector-placeholder placeholder-from">от</span>
                   <input class="price-selector price-minimal" type="text" name="minimal-price" value="0">
                 </label>
               </div>
               <div class="price-selector-wrap">
                 <label class="price-selector-label">
-                  <span class="price-selector-placeholder">до</span>
+                  <span class="price-selector-placeholder placeholder-to">до</span>
                   <input class="price-selector price-maximal" type="text" name="maximal-price" value="9000">
                 </label>
               </div>
             </div>
-
-            <div class="range">
-              <button class="range range-min" type="button"></button>
-              <button class="range range-max" type="button"></button>
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0; width:217px">
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
             </div>
           </fieldset>
           <div class="catalog-filter-buttons">
@@ -227,28 +227,26 @@
             </div>
           </li>
         </ol>
-        <div class="catalog-pagination catalog-navigation-bottom">
-          <ul class="pagination reset-list">
-            <li class="pagination-item">
-              <a class="pagination-link current-page" href="#"> 1 </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 2 </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 3 </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 4 </a>
-            </li>
-            <li class="pagination-item">
-              <span class="pagination-link pagination-dots"> ... </span>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 10 </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="pagination reset-list catalog-pagination catalog-navigation-bottom">
+          <li class="pagination-item">
+            <a class="pagination-link current-page" href="#"> 1 </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#"> 2 </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#"> 3 </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#"> 4 </a>
+          </li>
+          <li class="pagination-item">
+            <span class="pagination-link pagination-dots"> ... </span>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#"> 10 </a>
+          </li>
+        </ul>
       </section>
 
       <section class="section-subscribe">
@@ -256,9 +254,12 @@
         <p class="section-description">
           Только полезная информация и никакого спама, <br> честное бойскаутское!
         </p>
-        <label class="visually-hidden" for="email">Ваш e-mail:</label>
-        <input class="input-field newsletter-input" type="email" id="email" placeholder="Ваш e-mail" required>
-        <button class="button email-button" type="submit">Подписаться</button>
+        <form class="email-subscribe" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="email">Ваш e-mail: </label>
+          <input class="input-field newsletter-input" type="email" id="email" placeholder="Ваш e-mail"
+            name="subscribe-email" required>
+          <button class="button email-button" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
     <footer class="footer">
