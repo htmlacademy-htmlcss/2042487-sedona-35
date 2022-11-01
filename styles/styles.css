@@ -484,6 +484,27 @@ justify-content: center;
   text-align: center;
 }
 
+
+social-link svg {
+  fill: #83B3D3;
+}
+
+.social-link:hover svg {
+  fill:#68A2CA;
+}
+
+.social-link:focus svg {
+  fill:#68A2CA;
+}
+
+.social-link:active svg {
+  opacity: 0.3;
+}
+
+.social-link:active.youtube-link svg {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .social-item{
   flex-shrink: 0;
 }
@@ -902,6 +923,25 @@ background-color: #756157;
   align-items: center;
   justify-content: center;
   display:flex ;
+}
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.current-page:hover {
+  background-color: #F2F2F2;
+  color: #000000;
+  border: 0;
 }
 
 .pagination-dots {
