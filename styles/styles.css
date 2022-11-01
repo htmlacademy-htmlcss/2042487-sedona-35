@@ -518,6 +518,34 @@ social-link svg {
   text-transform: uppercase;
 }
 
+.phone-link:hover {
+  color: #756157;
+}
+
+.phone-link:focus {
+  color: #756157;
+}
+
+.phone-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-link {
+  fill: #000;
+}
+
+.htmlacademy-link:hover {
+  fill: #756157;
+}
+
+.htmlacademy-link:focus {
+  fill: #756157;
+}
+
+.htmlacademy-link:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 .main-filter-header {
   background-image:url(../images/catalog/filter-background.jpg);
   color: #FFFFFF;
