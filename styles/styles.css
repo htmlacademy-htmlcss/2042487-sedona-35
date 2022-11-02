@@ -101,6 +101,18 @@ body {
   min-width: 160px;
 }
 
+.button-here:hover {
+  background-color: #615048;
+}
+
+.button-here:focus {
+  background-color: #615048;
+}
+
+.button-here:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .nav-link {
  font-family: inherit;
@@ -383,6 +395,18 @@ color: #FFFFFF;
   text-transform: uppercase;
 }
 
+.button-big:hover {
+  background-color: #615048;
+}
+
+.button-big:focus {
+  background-color: #615048;
+}
+
+.button-big:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 .section-search {
   text-align: center;
   padding: 96px 304px 96px;
@@ -431,11 +455,8 @@ justify-content: center;
     border: 0;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    padding-left: 20px;
   }
-
-.newsletter-input {
-  padding-left: 20px;
-}
 
 .email-button {
   color: #FFFFFF;
@@ -450,6 +471,18 @@ justify-content: center;
   line-height: 36px;
 }
 
+.email-button:hover {
+  background-color: #68A2CA;
+}
+
+.email-button:focus {
+  background-color: #68A2CA;
+}
+
+.email-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .pagination {
   font-weight: 700;
@@ -485,7 +518,7 @@ justify-content: center;
 }
 
 
-social-link svg {
+.social-link svg {
   fill: #83B3D3;
 }
 
@@ -499,10 +532,6 @@ social-link svg {
 
 .social-link:active svg {
   opacity: 0.3;
-}
-
-.social-link:active.youtube-link svg {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .social-item{
@@ -530,19 +559,19 @@ social-link svg {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.htmlacademy-link {
+.htmlacademy-link svg{
   fill: #000;
 }
 
-.htmlacademy-link:hover {
+.htmlacademy-link:hover svg{
   fill: #756157;
 }
 
-.htmlacademy-link:focus {
+.htmlacademy-link:focus svg{
   fill: #756157;
 }
 
-.htmlacademy-link:active {
+.htmlacademy-link:active svg{
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -779,15 +808,54 @@ top: 11px;
 }
 
 .button-primary {
-background-color: #756157;
+  background-color: #756157;
+}
+
+.button-primary:hover {
+  background-color: #615048;
+}
+
+.button-primary:focus {
+  background-color: #615048;
+}
+
+.button-primary:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-secondary {
   background-color: #82B3D3;
 }
 
-.button-secondary-active {
+.button-secondary-activeted {
   background: #7DB54F;
+}
+
+.button-secondary-activeted:hover {
+  background-color: #6C9E42;
+}
+
+.button-secondary-activeted:focus {
+  background-color: #6C9E42;
+}
+
+.button-secondary-activeted:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-secondary:hover {
+  background-color: #68A2CA;
+}
+
+.button-secondary:focus {
+  background-color: #68A2CA;
+}
+
+.button-secondary:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .select-control {
@@ -966,19 +1034,19 @@ background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.current-page:hover {
-  background-color: #F2F2F2;
-  color: #000000;
-  border: 0;
-}
 
-.pagination-dots {
-  color: #000000;
-  background-color: #FFFFFF;
-}
-
-.current-page {
+.current-page,
+.current-page:hover,
+.current-page:focus,
+.current-page.active {
   color: #000;
   background-color: #F2F2F2;
+  cursor: default;
+}
+
+.pagination-dots,
+.pagination-dots:hover {
+  color: #000000;
+  background-color: #FFFFFF;
   cursor: default;
 }
