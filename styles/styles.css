@@ -614,7 +614,14 @@ justify-content: center;
   display: inline-block;
   position: relative;
   left: 6px;
+}
 
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .product-list-title {
@@ -640,6 +647,7 @@ justify-content: center;
 
 .option {
   display: block;
+  padding-left: 40px;
 }
 
 .catalog-filter {
@@ -671,9 +679,71 @@ justify-content: center;
   margin-right: 67px;
 }
 
+.option-input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.input-checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  margin-left: -40px;
+}
+
+.option-input:checked + .input-checkbox {
+  background-image: url(../images/icons/marker-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.option-input:hover + .input-checkbox {
+  opacity: 0.6;
+}
+
+.option-input:focus + .input-checkbox {
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.option-input:active + .input-checkbox {
+  opacity: 0.3;
+}
+
 .catalog-filter-type {
   gap: 18px;
   margin-right: auto;
+}
+
+.input-radio {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-left: -40px;
+}
+
+.option-input:checked + .input-radio {
+  background-image: url(../images/icons/marker-dot.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.option-input:hover + .input-radio {
+  opacity: 0.6;
+}
+
+.option-input:focus + .input-radio {
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.option-input:active + .input-radio {
+  opacity: 0.3;
 }
 
 .catalog-filter-title {
@@ -905,6 +975,15 @@ top: 11px;
 
 .catalog-variant-button-current {
   border-color: #000000;
+}
+
+.catalog-variant-button:hover {
+  border-color: #000000;
+}
+
+.catalog-variant-button:focus {
+  border-color: #68A2CA;
+  outline: none;
 }
 
 .catalog-view-title {
