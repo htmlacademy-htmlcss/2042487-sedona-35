@@ -115,25 +115,26 @@ body {
 }
 
 .nav-link {
- font-family: inherit;
- font-size: 20px;
- line-height: 24px;
- font-weight: 700;
- color: #000000;
- text-align: center;
- text-decoration: none;
- display: flex;
- padding: 20px 16px;
- position: relative;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  padding: 20px 16px;
+  position: relative;
+  cursor: pointer;
 }
 
 .nav-link-current::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-    right: 16px;
-    border-bottom: 2px solid #756257;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  border-bottom: 2px solid #756257;
 }
 
 .button-search {
@@ -185,6 +186,7 @@ body {
   text-decoration: none;
   border: 0;
   padding: 8px 34px 8px;
+  cursor: pointer;
 }
 
 .main-index {
@@ -647,7 +649,7 @@ justify-content: center;
 
 .option {
   display: block;
-  padding-left: 40px;
+  padding-left: 37px;
 }
 
 .catalog-filter {
@@ -693,7 +695,7 @@ justify-content: center;
   height: 20px;
   background-color: #FFFFFF;
   border-radius: 4px;
-  margin-left: -40px;
+  margin-left: -37px;
 }
 
 .option-input:checked + .input-checkbox {
@@ -712,6 +714,11 @@ justify-content: center;
 
 .option-input:active + .input-checkbox {
   opacity: 0.3;
+}
+
+.option-input:disabled + .input-checkbox {
+  opacity: 0.1;
+  cursor: not-allowed;
 }
 
 .catalog-filter-type {
@@ -744,6 +751,11 @@ justify-content: center;
 
 .option-input:active + .input-radio {
   opacity: 0.3;
+}
+
+.option-input:disabled + .input-radio {
+  opacity: 0.1;
+  cursor: not-allowed;
 }
 
 .catalog-filter-title {
@@ -1112,7 +1124,6 @@ top: 11px;
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .current-page,
 .current-page:hover,
