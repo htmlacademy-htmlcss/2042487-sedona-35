@@ -11,7 +11,7 @@
 
   <body>
     <header class="page-header container">
-      <a class="nav-logo">
+      <a class="nav-logo" href="index.html">
         <img class="logo" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип Седоны.">
       </a>
       <nav class="nav">
@@ -69,43 +69,48 @@
           <fieldset class="catalog-filter-resources catalog-filter-control">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <label class="option">
-              <input class="option-input" type="checkbox" name="pool" checked>
+              <input class="option-input visually-hidden" type="checkbox" name="pool" checked>
               <span class="input-checkbox">
               </span>
-              Бассейн
+              <span class="option-label">Бассейн</span>
             </label>
             <label class="option">
-              <input class="option-input" type="checkbox" name="parking" checked>
-              <span class="input-checkbox">
-              </span>
-              Парковка
+              <input class="option-input visually-hidden" type="checkbox" name="parking" checked>
+                <span class="input-checkbox">
+                </span>
+                <span class="option-label">Парковка
+                </span>
             </label>
             <label class="option">
-              <input class="option-input" type="checkbox" name="wi-fi">
-              <span class="input-checkbox">
-              </span>
-              Wi-Fi
+              <input class="option-input visually-hidden" type="checkbox" name="wi-fi">
+                <span class="input-checkbox">
+                </span>
+                <span class="option-label">Wi-Fi
+                </span>
             </label>
           </fieldset>
           <fieldset class="catalog-filter-type catalog-filter-control">
             <legend class="catalog-filter-title">Тип Жилья:</legend>
             <label class="option">
-              <input class="option-input" type="radio" name="catalog-product-type" value="hotel" checked>
+              <input class="option-input visually-hidden" type="radio" name="catalog-product-type" value="hotel" checked >
               <span class="input-radio">
               </span>
-              Гостиница
+              <span class="option-label">Гостиница
+              </span>
             </label>
             <label class="option">
-              <input class="option-input" type="radio" name="catalog-product-type" value="motel">
+              <input class="option-input visually-hidden" type="radio" name="catalog-product-type" value="motel">
               <span class="input-radio">
               </span>
-              Мотель
+              <span class="option-label">Мотель
+              </span>
             </label>
             <label class="option">
-              <input class="option-input" type="radio" name="catalog-product-type" value="apartments">
+              <input class="option-input visually-hidden" type="radio" name="catalog-product-type" value="apartments">
               <span class="input-radio">
               </span>
-              Апартаменты
+              <span class="option-label">Апартаменты
+              </span>
             </label>
           </fieldset>
           <fieldset class="catalog-filter-group filter-price">
@@ -114,13 +119,13 @@
               <div class="price-selector-wrap">
                 <label class="price-selector-label">
                   <span class="price-selector-placeholder placeholder-from">от</span>
-                  <input class="price-selector price-minimal" type="text" name="minimal-price" value="0">
+                  <input class="price-selector price-minimal" type="number" name="minimal-price" value="0" min="0">
                 </label>
               </div>
               <div class="price-selector-wrap">
                 <label class="price-selector-label">
                   <span class="price-selector-placeholder placeholder-to">до</span>
-                  <input class="price-selector price-maximal" type="text" name="maximal-price" value="9000">
+                  <input class="price-selector price-maximal" type="number" name="maximal-price" value="9000" min="0">
                 </label>
               </div>
             </div>
@@ -136,8 +141,8 @@
             </div>
           </fieldset>
           <div class="catalog-filter-buttons">
-            <button class="button filter-button button-secondary" type="submit">Применить</button>
-            <button class="button reset-button" type="reset">Сбросить</button>
+            <button class="button filter-button button-secondary        " type="submit" >Применить</button>
+            <button class="button reset-button" type="reset">Сбросить </button>
           </div>
         </form>
       </div>
@@ -194,8 +199,8 @@
             <div class="product-card-property">
               <span class="product-card-type">Гостиница</span>
               <b class="product-card-price">От 5000 ₽</b>
-              <a class="button button-primary button-product-card">Подробнее</a>
-              <button class="button button-secondary-activeted button-product-card" type="button">В избранном</button>
+              <a class="button button-primary button-product-card" href="#">Подробнее</a>
+              <button class="button button-secondary-activated button-product-card" type="button">В избранном</button>
               <div class="rating-list rating-four-stars"></div>
               <span class="product-card-rating">Рейтинг: 9,2</span>
             </div>
