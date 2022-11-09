@@ -1236,10 +1236,10 @@ justify-content: center;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
-/*
+
 .modal-container-close {
   display: none;
-} */
+}
 
 .modal-wrap {
   width: 717px;
@@ -1402,6 +1402,7 @@ justify-content: center;
   width: 40px;
   height: 48px;
   padding: 0;
+  cursor: pointer;
 }
 
 .field-icon {
@@ -1509,7 +1510,7 @@ justify-content: center;
   line-height: 20px;
   padding: 20px 22px 23px;
   width: 256px;
-  top: 42px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <script defer src="js/main.js"></script>
   </head>
 
   <body>
@@ -129,7 +130,7 @@
           Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <button class="button button-big" type="button">
+        <button class="button button-big check-in-button" type="button">
           Поиск гостиницы в Седоне
         </button>
       </section>
@@ -221,7 +222,7 @@
                     </span>
                     <svg class="field-icon number-field-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
                   </button>
-                  <input class="modal-number-input" type="number" min="1" value="2" name="adults" id="adults" required>
+                  <input class="modal-number-input" type="number" min="1" max="999" value="2" name="adults" id="adults" placeholder="2" required>
                   <button class="button-more number-button" type="button">
                     <span class="visually-hidden">
                       Больше на один.
@@ -246,7 +247,7 @@
                         </span>
                         <svg class="field-icon number-field-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
                       </button>
-                      <input class="modal-number-input" type="number" min="1" value="2" name="children" id="children" required>
+                      <input class="modal-number-input" type="number" min="1" max="999" value="2" name="children" id="children" placeholder="2" required>
                       <button class="button-more number-button" type="button">
                             <span class="visually-hidden">
                               Больше на один.
