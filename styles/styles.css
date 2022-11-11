@@ -223,6 +223,7 @@ body {
   font-weight: 700;
   line-height: 20px;
 
+  max-width: 400px;
   padding: 8px 34px 8px;
 
   cursor: pointer;
@@ -480,7 +481,7 @@ body {
   font-size: 20px;
   line-height: 36px;
 
-  width: 376px;
+  min-width: 376px;
 
   text-align: center;
   text-transform: uppercase;
@@ -551,8 +552,8 @@ body {
 .newsletter-input {
   min-width: 452px;
   min-height: 52px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 
   border: 0;
   border-top-left-radius: 4px;
@@ -709,6 +710,7 @@ body {
   line-height: 21px;
 
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
 
   margin-bottom: 40px;
@@ -1153,10 +1155,11 @@ body {
 
   flex-shrink: 0;
 
-  width: 292px;
+  min-width: 292px;
   height: 49px;
-  margin-right: 70px;
+  margin-right: 60px;
   margin-left: auto;
+  padding-right: 30px;
   padding-left: 15px;
 
   border: 2px solid #E5E5E5;
@@ -1164,7 +1167,7 @@ body {
   background-color: #FFFFFF;
   background-image: url("../images/icons/arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: left 260px center;
+  background-position: right 17px center;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1197,11 +1200,15 @@ body {
 
   margin-top: 50px;
   margin-bottom: 40px;
+
+  gap: 10px;
 }
 
 .catalog-variant {
   display: flex;
   flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: end;
 
   width: 160px;
 
@@ -1337,6 +1344,7 @@ body {
 
 .catalog-navigation-bottom {
   display: flex;
+  flex-wrap: wrap;
 
   margin-top: 40px;
   margin-left: 3px;
@@ -1352,8 +1360,8 @@ body {
   align-items: center;
   justify-content: center;
 
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
 
   text-align: center;
   text-decoration: none;
