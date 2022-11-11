@@ -111,6 +111,37 @@ body {
   align-self: center;
 }
 
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+
+  max-width: 400px;
+  margin: 0;
+  padding: 8px 34px 8px;
+
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 4px;
+  background-color: #756157;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.1;
+}
+
 .button-here {
   display: inline-block;
 
@@ -217,35 +248,6 @@ body {
   background-color: #7DB54F;
 }
 
-.button {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-
-  max-width: 400px;
-  padding: 8px 34px 8px;
-
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  color: #FFFFFF;
-  border: 0;
-  border-radius: 4px;
-  background-color: #756157;
-}
-
-.button:focus {
-  outline: none;
-}
-
-.button:disabled {
-  cursor: not-allowed;
-
-  opacity: 0.1;
-}
 
 .main-index {
   flex-grow: 1;
@@ -710,8 +712,8 @@ body {
   line-height: 21px;
 
   display: flex;
-  flex-wrap: wrap;
   align-content: center;
+  flex-wrap: wrap;
 
   margin-bottom: 40px;
 
@@ -812,7 +814,8 @@ body {
 }
 
 .catalog-filter-resources {
-  margin-right: 67px;
+  width: 160px;
+  margin-right: 62px;
 
   gap: 18px;
 }
