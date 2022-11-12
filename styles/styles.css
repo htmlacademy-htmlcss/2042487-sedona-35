@@ -214,6 +214,11 @@ body {
   background-position: center center;
 }
 
+.button-search:focus,
+.button-search:hover {
+  opacity: 0.6;
+}
+
 .button-likes {
   display: block;
 
@@ -225,6 +230,11 @@ body {
   background-image: url("../images/icons/heart.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.button-likes:focus,
+.button-likes:hover {
+  opacity: 0.6;
 }
 
 .favorites-counter {
@@ -555,6 +565,7 @@ body {
 .newsletter-input {
   min-width: 452px;
   min-height: 52px;
+  margin: 0;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -728,6 +739,20 @@ body {
   color: #ffffff;
 }
 
+.home-icon {
+  position: relative;
+  top: 2px;
+
+  display: inline-block;
+
+  width: 13px;
+  height: 15px;
+
+  background-image: url("../images/icons/home.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .breadcrumbs-item:not(:last-child)::after {
   position: relative;
   left: 6px;
@@ -869,7 +894,7 @@ body {
 
   width: 20px;
   height: 20px;
-  margin-left: -40px;
+  margin-left: -37px;
 
   border-radius: 50%;
   background-color: #ffffff;
@@ -905,6 +930,7 @@ body {
   line-height: 24px;
 
   margin-bottom: 32px;
+  padding: 0;
 
   color: #ffffff;
 }
@@ -1212,7 +1238,7 @@ body {
 .product-navigation-top {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   margin-top: 50px;
   margin-bottom: 40px;
@@ -1507,9 +1533,10 @@ body {
 
 .modal-string-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 23px;
   align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 23px;
 }
 
 .modal-input {
@@ -1532,17 +1559,17 @@ body {
 }
 
 .modal-input:hover {
-  background: #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 .modal-input:focus {
   outline: 3px solid #83b3d3;
-  background: #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 .modal-input:active {
   outline: 2px solid #000000;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .modal-input:disabled {
@@ -1558,26 +1585,27 @@ body {
 }
 
 .modal-string-label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+
+  align-self: flex-start;
+
   margin-right: auto;
   padding: 12px 0;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
   text-transform: capitalize;
-  align-self: flex-start;
 }
 
 .hint {
   font-size: 16px;
   line-height: 21px;
 
-  margin-top: 4px;
-  margin-left: 20px;
-
   display: block;
 
   max-width: 350px;
+  margin-top: 4px;
+  margin-left: 20px;
 }
 
 .error-massage {
@@ -1771,6 +1799,11 @@ body {
   border: none;
   border-radius: 50%;
   background-color: #83b3d3;
+}
+
+.tooltip-toggle:focus .tooltip-icon,
+.tooltip-toggle:hover .tooltip-icon {
+  opacity: 0.6;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
